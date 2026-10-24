@@ -18,7 +18,7 @@ Created by jino99 — v3.0
 
 ---
 
-## ⚠️ LEGAL DISCLAIMER
+## LEGAL DISCLAIMER
 
 **This tool is provided for EDUCATIONAL and RESEARCH purposes ONLY.**
 
@@ -36,32 +36,32 @@ See `Legal Disclaimer.txt` for complete terms.
 
 ---
 
-## 🚀 Features
+## Features
 
 ### Core
-- ✅ BIP39 Mnemonic Generation (12/24 word seed phrases)
-- ✅ HD Wallet Derivation (BIP44/49/84)
-- ✅ All Address Types — Legacy (`1...`), P2SH (`3...`), Native SegWit (`bc1...`)
-- ✅ Full BIP39 passphrase (13th word) support
-- ✅ Online balance checking via multiple APIs with async fallback
+- BIP39 Mnemonic Generation (12/24 word seed phrases)
+- HD Wallet Derivation (BIP44/49/84)
+- All Address Types — Legacy (`1...`), P2SH (`3...`), Native SegWit (`bc1...`)
+- Full BIP39 passphrase (13th word) support
+- Online balance checking via multiple APIs with async fallback
 
 ### Advanced
-- 🔥 **Multiprocessing DB Search** — each worker runs its own SQLite reader, zero IPC bottleneck
-- 🔥 **100M+ row database support** — SQLite WAL + mmap, no RAM loading, instant startup
-- 🔥 **Passphrase Attack Engine** — common, pattern, hybrid, custom wordlist strategies
-- 🔥 **Target Address Attack** — bruteforce a specific address with known seed
-- 🔥 **Wallet Recovery** — derive all address types from any seed phrase
+- **Multiprocessing DB Search** — each worker runs its own SQLite reader, zero IPC bottleneck
+- **100M+ row database support** — SQLite WAL + mmap, no RAM loading, instant startup
+- **Passphrase Attack Engine** — common, pattern, hybrid, custom wordlist strategies
+- **Target Address Attack** — bruteforce a specific address with known seed
+- **Wallet Recovery** — derive all address types from any seed phrase
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - **Python 3.7+**
 - **OS:** Linux (recommended), macOS, Windows
 
 | Package | Role | Required? |
 |---------|------|-----------|
-| `mnemonic` | BIP39 seed generation | ✅ Required |
+| `mnemonic` | BIP39 seed generation | Required |
 | `coincurve` | Fast secp256k1 (~10x speedup) | Strongly recommended |
 | `aiohttp` | Async balance API calls | Recommended |
 | `requests` | Sync balance API fallback | Recommended |
@@ -69,7 +69,7 @@ See `Legal Disclaimer.txt` for complete terms.
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```bash
 git clone https://github.com/jino99/w-ray.git
@@ -80,7 +80,7 @@ python w-ray.py
 
 ---
 
-## 📖 Menu
+## Menu
 
 ```
 [1] Generate Wallet & Check Balance
@@ -96,7 +96,7 @@ python w-ray.py
 
 ---
 
-## 🗂️ Database Setup
+## Database Setup
 
 ### Format
 ```
@@ -115,7 +115,7 @@ address<TAB>balance_in_satoshis
 
 ---
 
-## 🔐 Passphrase Attack (Option 3)
+## Passphrase Attack (Option 3)
 
 Strategies tried per seed:
 1. Common passwords + custom `passphrases.txt`
@@ -126,7 +126,7 @@ Customize via option **[8]**.
 
 ---
 
-## 📁 Output Files
+## Output Files
 
 | File | Description |
 |------|-------------|
@@ -137,7 +137,7 @@ Customize via option **[8]**.
 
 ---
 
-## 🔬 Technical Details
+## Technical Details
 
 - BIP39 entropy: 128-bit (12 words) or 256-bit (24 words)
 - Derivation paths: `m/44'/0'/0'/0/0` (Legacy), `m/49'/0'/0'/0/0` (P2SH), `m/84'/0'/0'/0/0` (SegWit)
@@ -147,7 +147,7 @@ Customize via option **[8]**.
 
 ---
 
-## 📊 Performance
+## Performance
 
 | Operation | Speed |
 |-----------|-------|
@@ -159,7 +159,7 @@ Option 2 scales linearly with CPU cores — each core runs a full generate+looku
 
 ---
 
-## ⚖️ Ethical Use
+## Ethical Use
 
 - ✔ Recovery of your own wallets
 - ✔ Education and research
@@ -168,6 +168,6 @@ Option 2 scales linearly with CPU cores — each core runs a full generate+looku
 
 ---
 
-## 📄 License
+## License
 
 MIT — see `LICENSE`.
