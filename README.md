@@ -14,7 +14,7 @@
 
 **Advanced Bitcoin Wallet Generation and Recovery Tool with Passphrase Attack Engine**
 
-Created by jino99 — v3.0
+Created by jino99 - v3.0
 
 ---
 
