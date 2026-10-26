@@ -1,4 +1,4 @@
-# W-RAY — Bitcoin Wallet Generator & Recovery Tool
+# W-RAY - Bitcoin Wallet Generator & Recovery Tool
 ```
  ██╗    ██╗      ██████╗  █████╗ ██╗   ██╗
  ██║    ██║      ██╔══██╗██╔══██╗╚██╗ ██╔╝
